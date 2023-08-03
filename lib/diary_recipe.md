@@ -112,13 +112,6 @@ Function that counts words
 
 
 
-
-
-
-
-
-
-
 Given a name and a task
 #remind reminds the user to do the task
 """

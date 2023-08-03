@@ -15,8 +15,8 @@ class DiaryEntry:
         count_words = len(words)
         return count_words / 200
     
-    def reading_chunk(self, wpm, minutes):
+    def reading_chunk(self, wpm, mins):
         words_per_minute = int(wpm)
-        words_to_read = int(words_per_minute * minutes)
+        words_to_read = int(words_per_minute * mins)
         words = self.contents.split()[:words_to_read]
         return " ".join(words)

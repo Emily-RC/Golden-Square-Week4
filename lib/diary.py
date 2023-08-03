@@ -22,8 +22,8 @@ class Diary:
             total_reading_time += entry.reading_time(200)
         return total_reading_time
 
-    def find_best_entry_for_reading_time(self, wpm, minutes):
-        words_the_user_could_read = wpm * minutes 
+    def find_best_entry_for_reading_time(self, wpm, mins):
+        words_the_user_could_read = wpm * mins 
         most_readable = None
         longest_found_so_far = 0
         for entry in self.entries: 
