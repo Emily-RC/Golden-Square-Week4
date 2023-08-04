@@ -40,7 +40,7 @@ class Diary:
     def reading_time(self, wpm):
         total_reading_time = 0
         for entry in self.entries:
-            total_reading_time += entry.reading_time(200)
+            total_reading_time += entry.reading_time(wpm)
         return total_reading_time
 
     def best_chunk(self, wpm, mins):
